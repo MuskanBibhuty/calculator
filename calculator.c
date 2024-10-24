@@ -31,6 +31,10 @@ float cube_root(int i) {
 	return cbrt(i);
 }
 
+float inverse(int i) {
+	return pow((float)i, -1)
+}
+
 int main() {
     int a, b;
     char operation;
@@ -85,7 +89,7 @@ int main() {
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The inverse of %d is %.2f\n", a, inverse(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
