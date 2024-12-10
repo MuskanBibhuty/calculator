@@ -95,8 +95,8 @@ int main() {
                 printf("Invalid operation. Please try again.\n");
         }
 
-        printf("Do you want to perform another operation [y/N]? ");
-        scanf(" %c", &confirm);
+        printf("Do you want to perform another operation [Y/N]? ");
+        scanf("%c", &confirm);
     } while (confirm == 'y' || confirm == 'Y');
 
     return 0;
